@@ -1,0 +1,18 @@
+.important-characteristics
+{
+    font-weight:bold;
+    color:lightyellow;
+}
+
+.image-size
+{
+    width:300px;
+    height:150px;
+} 
+
+body
+{ 
+    background: rgb(110, 160, 255);
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+}

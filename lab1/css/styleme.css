@@ -12,7 +12,64 @@
 
 body
 { 
+    font-size:14px;
     background: rgb(39, 65, 114);
     color:white;
     font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:#ff8080;
+}
+
+a:hover{
+    text-decoration:underline;
+    color:yellow;
+}
+
+p:first-letter{
+    font-size: 1.5em;
+}   
+
+.second-parent-list
+{
+    padding-left: 0px;
+    font-size:1em;
+}
+
+.second-parent-list ul  
+{
+    padding-left:10px;
+    font-size:0.9em;
+}
+
+.reversed-list
+{  
+    list-style-type:none;
+    counter-reset:item 4;    
+}
+
+.reversed-list > li { 
+      counter-increment:item -1;
+}
+
+.reversed-list  > li:before
+{
+    content:counter(item) ". ";
+}
+
+ol ul  
+{
+ list-style: none;
+}
+
+.tvshow-info-label
+{
+    color: #ffffa2;
+}
+
+.tvshow-info-label li
+{
+    color:white;
 }

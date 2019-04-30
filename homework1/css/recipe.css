@@ -1,0 +1,61 @@
+body
+{
+    background-color:white;
+    color:#404040;
+    font-size:11pt;
+    font-family:Georgia, 'Times New Roman', Times, sans-serif;
+    margin: auto 15%;
+}
+
+.main-heading
+{
+    text-align:center;
+    font-size: 22pt;
+    font-weight:bold;
+}
+
+.headings
+{
+    color:#A4A400;
+    background-color:#F0F0F0;    
+    font-family: 'Open Sans', sans-serif;
+    text-decoration:underline;
+}
+
+.user-comment
+{
+    background-color:rgb(255, 255, 182);
+    width:85%;
+    margin-left:7.5%;
+    margin-right:7.5%;
+}
+
+
+
+.other-heading
+{
+    text-align:left;
+    font-size: 18pt;
+    font-weight:normal;
+}
+
+a
+{
+    color:#A4A400
+}
+
+.todo-list
+{
+    list-style:none;
+    padding-left:0px;
+}
+
+.div-with-border
+{
+     border:1.25px solid rgb(151, 151, 147);
+}
+
+.directions-title
+{
+    font-weight:bold;
+}

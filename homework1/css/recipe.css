@@ -1,6 +1,7 @@
 body
 {
-    background-color:white;
+    background-image:  url('../images/silverware.jpg');
+    background-repeat:  repeat;
     color:#404040;
     font-size:11pt;
     font-family:Georgia, 'Times New Roman', Times, sans-serif;
@@ -14,12 +15,17 @@ body
     font-weight:bold;
 }
 
+.headings span
+{    
+    background-color:#F0F0F0;  
+ }
 .headings
 {
-    color:#A4A400;
-    background-color:#F0F0F0;    
+    color:#A4A400;  
     font-family: 'Open Sans', sans-serif;
     text-decoration:underline;
+    letter-spacing: 0.20em;    
+    
 }
 
 .user-comment
@@ -30,6 +36,10 @@ body
     margin-right:7.5%;
 }
 
+blockquote
+{
+    background-color:rgb(255, 255, 182);
+}
 
 
 .other-heading
@@ -58,4 +68,9 @@ a
 .directions-title
 {
     font-weight:bold;
+}
+
+ul
+{
+    list-style-image: url('../images/pie_icon.gif');
 }

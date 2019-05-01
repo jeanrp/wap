@@ -73,3 +73,8 @@ ol ul
 {
     color:white;
 }
+
+.reversed-list li:last-child .second-parent-list
+{
+    margin-left:15px;
+}

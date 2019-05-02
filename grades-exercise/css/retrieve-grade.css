@@ -1,0 +1,11 @@
+.form-members
+{
+    clear:both;
+    margin:10px;
+    margin-left:0px;
+}
+
+input[type="text"], select
+{
+    width:200px;
+}

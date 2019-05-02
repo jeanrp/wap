@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup php</title>
+    <link rel="stylesheet" href="nerdluv.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/nerdluv.png" alt="banner logo"> <br>
+        where meek geeks meet
+    </header>
+
+    <fieldset class="match">
+        <legend>New User Signup</legend>
+        <form action="">
+            <div class="form-members">
+                <label for="personName"><strong>Name</strong></label>
+                <input type="text" name="personName" id="personName" maxlength="16">
+            </div>
+    
+            <div class="form-members">
+                <label><strong>Gender</strong></label>
+                <label for="genderMale"><input type="radio" name="gender" id="genderMale" value="Male">Male</label>
+                <label for="genderFemale"><input type="radio" name="gender" id="genderFemale" value="Female"
+                        checked>Female</label>
+            </div>
+    
+            <div><label for="age"><strong>Age</strong></label><input type="text" name="age" id="age" size="6" maxlength="2">
+    
+            </div>
+    
+            <div class="form-members">
+                <label for="personalityType"><strong>Personality Type</strong></label>
+                <input type="text" name="personalityType" id="personalityType" maxlength="4"> (<a
+                    href="http://www.humanmetrics.com/cgi-win/JTypes2.asp" target="_blank">Dont know your type</a>)
+            </div>
+    
+            <div class="form-members">
+                <label for="favoriteOs"><strong>Favorite OS</strong></label>
+                <select name="favoriteOs" id="favoriteOs">
+                    <option value="Windows" selected>Windows</option>
+                    <option value="Mac OS X">Mac OS X</option>
+                    <option value="Linux">Linux</option>
+                </select>
+            </div>
+    
+            <div class="form-members">
+                <label for="minAge"><strong>Seeking age</strong></label>
+                <input type="text" name="minAge" id="minAge" placeholder="min">to<input type="text" name="maxAge"
+                    id="maxAge" placeholder="max">
+            </div>
+    
+            <input type="submit" value="Sign Up"></button>    
+        </form>
+
+    </fieldset >  
+
+    <footer>
+        <hr>
+        <p>
+            Results and page (C) Copyright NerdLuv Inc.
+        </p>
+
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <img src="images/back.gif" alt="icon">
+                    Back to front page
+                </a>
+            </li>
+        </ul>
+
+        <a href="https://webster.cs.washington.edu/validate-html.php">
+            <img src="images/w3c-html5.png" alt="Valid HTML">
+        </a>
+        <a href="https://webster.cs.washington.edu/validate-css.php">
+            <img src="images/w3c-css.png" alt="Valid CSS">
+        </a>
+    </footer>
+</body>
+
+</html>

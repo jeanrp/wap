@@ -9,6 +9,12 @@ You should not need to modify this file.  Your pages should work with it as-is.
 	font-family: "Verdana", "Geneva", sans-serif;
 }
 
+footer p
+{
+	font-size: 9pt !important;
+}
+
+
 a {
 	color: #F44;
 	text-decoration: none;

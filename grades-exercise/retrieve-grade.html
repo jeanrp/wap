@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<script
+	id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Retrieve Grade</title>
+
+	<link rel="stylesheet" href="css/retrieve-grade.css">
+</head>
+
+<body cz-shortcut-listen="true">
+	<h1>Retrieve your grade</h1>
+
+	<form action="http://mumstudents.org/params.php">
+		<div class="form-members">
+			<label for="studentName">Name:</label>
+			<input type="text" name="studentName" id="studentName">
+		</div>
+		<div class="form-members">
+			<label for="studentId">Student Id:</label>
+			<input type="text" name="studentId" id="studentId">
+		</div>
+		<div class="form-members">
+			<label for="assignmentId">Assignment:</label>
+			<select name="assignment" id="assignmentId">
+				<option value="a1">Assignment 1</option>
+				<option value="a2">Assignment 2</option>
+				<option value="a3">Assignment 3</option>
+			</select>
+		</div>
+		<div class="form-members">
+			<label for="entry">Entry Date:</label>
+			<label for="entryDateFebruary"><input type="radio" name="entryDate" id="entryDateFebruary" value="february">
+				February</label>
+			<label for="entryDateMay"><input type="radio" name="entryDate" id="entryDateMay" value="may"> May</label>
+			<label for="entryDateAugust"><input type="radio" name="entryDate" id="entryDateAugust" value="august">
+				August</label>
+			<label for="entryDateNovember"><input type="radio" name="entryDate" id="entryDateNovember"
+					value="november">November</label>
+		</div>
+		<div class="form-members">
+			<label for="notLying"><input type="checkbox" name="notLying" id="notLying"> Check if you are not lying and
+				really are only looking up your own grade</label>
+		</div>
+		<button type="submit">Get Grade</button>
+	</form>
+</body>
+
+</html>

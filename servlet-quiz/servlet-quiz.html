@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p style="font-weight:bold;">1.	What is the difference between a web server and a web container?</p>
+    Web Server is capable of handling HTTP requests, sent by client and respond back with HTTP response. Web Container is the component of a web server that interacts with java servlets.
+    <p style="font-weight:bold;">2.	What is a servlet?</p>
+    It is a Java class that is used to extend the capabilities of servers.
+    <p style="font-weight:bold;">3.	 How do web servers and web containers interact with servlets?</p>
+    Firstly, the web server receives requests by the client and delegate 	these requests to the servlet container. Then, the servlet container loads the servlet. And the servlet container handles multiple requests for the same servlet by spawning multiple threads, one thread per request, each executing the service() method of a single instance of the servlet.
+    <p style="font-weight:bold;">4.     Who creates request objects?</p>
+            The servlet container.
+    <p style="font-weight:bold;">5.    What are the states in the servlet lifecycle?</p>		
+            Initialization, Processing and Destroy.	
+    <p style="font-weight:bold;">6.    Who calls init and when?</p>
+    The servlet container calls the init and it may happen at the container startup or at the first time the client invokes the servlet with a request.
+    <p style="font-weight:bold;">7.   Which of init, service, and doGet should you override?</p>
+    doGet, because the init it’s called to initialize the servlet and the service method invokes the doGet or doPost method, that you should override.
+    <p style="font-weight:bold;">8.    In what sense are servlets multi-threaded?</p>
+     In the way that the servlet container handles multiple requests for the same servlet by spawning multiple threads, one thread per request, each executing the service() method of a single instance of the servlet.
+    <p style="font-weight:bold;">9.   What are the implications of this for servlet instance variables?</p>
+    The servlet has a single instance and each instance variables is shared for all the requests, so these variables are not thread safe.
+    
+    
+</body>
+</html>

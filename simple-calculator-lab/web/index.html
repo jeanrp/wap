@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<form action="calculate" method="post">
+    <div class="calculate-block">
+        <input type="text" name="firstNumberSum" size="1" pattern="[0-9]" id="firstNumberSum">&nbsp;+&nbsp;<input
+            type="text" pattern="[0-9]" size="1" name="secondNumberSum" id="secondNumberSum">&nbsp;=&nbsp;<input
+            type="text" name="resultSum" id="resultSum" size="1" readonly>
+    </div>
+    <br>
+    <div class="calculate-block">
+        <input type="text" name="firstNumberMultiplication" size="1" pattern="[0-9]" id="firstNumberMultiplication">&nbsp;*&nbsp;<input
+            type="text" size="1" pattern="[0-9]" name="secondNumberMultiplication" id="secondNumberMultiplication">&nbsp;=&nbsp;<input
+            type="text" name="resultMultiplication" size="1" id="resultMultiplication" readonly>
+    </div>
+    <br>
+    <div class="submit-block">
+        <input type="submit" value="Submit">
+    </div>
+</form>
+</body>
+</html>

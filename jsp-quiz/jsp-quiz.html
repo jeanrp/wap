@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p style="font-weight:bold;">1. What is the main value of Java Server Pages?</p>
+    It’s separate the display from processing, in other words, separate html from java.
+
+    <p style="font-weight:bold;">2. How are JSP pages related to servlets?</p>
+    It’s related to the servlets in the way that in the compilation process, the JSP is turned into a servlet and the
+    life cycle is similar to the life cycle of servlets as well.
+
+    <p style="font-weight:bold;">3. How are JSP pages related to HTML?</p>
+    It’s related to HTML in the way that JSP is a technology for developing web pages that allow developers to insert
+    java code in HTML pages.
+
+    <p style="font-weight:bold;">4. Give an example of a JSP scriptlet and show how it will look in the JSP servlet .
+    </p>
+    <pre>
+    <b>JSP scriptlet</b>
+    <%! Int count = 0 %>
+    
+    <b>JSP servlet</b>
+    public class ExampleServlet()
+    {
+    	init(){ … }
+    	service(){
+    	int count = 0;
+    }
+    	destroy(){ … }
+    }	
+
+    </pre>
+    <p style="font-weight:bold;">5. Give an example of a JSP declaration and show how it will look in the JSP servlet.
+    </p>
+    <pre>
+    <b>JSP declaration</b>
+    <%! Int count = 0 %>
+    
+    <b>JSP servlet</b>
+    public class ExampleServlet()
+    {
+    	int count = 0;
+    	init(){ … }
+    	service(){ … }
+    	destroy(){ … }
+    }	
+</pre>
+
+    <p style="font-weight:bold;">6. Give an example of a JSP comment and show how it will look in the JSP servlet.</p>
+    <pre>
+    <b>JSP Comment</b>
+    <%-- jsp comment --%>
+    <b>JSP Servlet</b>
+    //jsp comment
+</pre>
+
+    <p style="font-weight:bold;">7. Give an example of a JSP expression and show how it will look in the JSP servlet.
+    </p>
+    <pre>
+    <b>JSP Expression</b>
+    <%= ++count%>
+    <b>JSP Servlet</b>
+    out.print(++count);
+</pre>
+
+    <p style="font-weight:bold;">8. Give an example of a JSP directive and show how it will look in the JSP servlet.</p>
+
+    <pre>
+    <b>JSP Directive</b>
+    <%@ page import=”java.util.Date” %>
+    <b>JSL Servlet</b>
+    import java.util.Date;
+    </pre>
+
+    <p style="font-weight:bold;">9. Explain how an EL expression is evaluated.</p>
+    ${something}
+    Firstly, the container checks the page scope for an attribute named “something”. If found use it. If not, it’s going
+    to check sequentially and do the same with the followings scopes: the request scope, the session scope, and
+    application scope. If it doesn’t find, then ignore the expression.
+
+
+    <p style="font-weight:bold;">10. Explain how servlet attributes are involved in EL expressions.</p>
+    They are involved because the container check all the attributes in created in all the scopes as request, session,
+    application and page.
+
+    <p style="font-weight:bold;">11. Explain how servlets and JSPs use request dispatch to interact.</p>
+    It’s used when you apply the MVC architecture, so the servlet it’s represented by the controller and the role of the
+    controller it’s to manipulate the model and return the model to the view, so, the view in this case it’s going to be
+    the JSP’s and the servlet it’s going to use the request dispatch to return the processed information to the view.
+
+</body>
+
+</html>

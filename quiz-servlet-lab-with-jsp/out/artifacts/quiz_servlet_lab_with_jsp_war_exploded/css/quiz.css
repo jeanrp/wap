@@ -1,0 +1,50 @@
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid green;
+}
+
+table td {
+    font-weight: normal;
+    color: black;
+    padding: 5px !important;
+}
+
+.active {
+    color: red;
+    font-weight: bold;
+}
+
+.error-message {
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: #ffaa99;
+    padding: 2px;
+    color: red;
+    font-weight: bold;
+    width: 30%;
+}
+
+.button {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    width: 30%;
+}
+
+#quiz-block {
+    width: 500px;
+    /*border-radius: 3px;*/
+    margin-top: 20px;
+    padding-left: 10px !important;
+    padding: 5px;
+    /*border: 1px solid black;*/
+
+}
+
+.form-age {
+    margin: 10px;
+}

@@ -8,6 +8,7 @@ public class FinishedState extends QuizState
 
     public FinishedState(int points, ManageQuiz manageQuiz) {
         super(points, manageQuiz);
+        setSequence(6);
     }
 
     @Override

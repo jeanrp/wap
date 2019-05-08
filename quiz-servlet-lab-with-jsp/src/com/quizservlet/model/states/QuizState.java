@@ -8,6 +8,7 @@ public abstract class QuizState
     private String question;
     private String answer;
     private ManageQuiz manageQuiz;
+    private int sequence;
 
     public QuizState(int points, ManageQuiz manageQuiz) {
         this.points = points;
@@ -44,6 +45,14 @@ public abstract class QuizState
 
     public int getPoints() {
         return points;
+    }
+
+    public int getSequence() {
+        return sequence;
+    }
+
+    public void setSequence(int sequence) {
+        this.sequence = sequence;
     }
 
     public abstract void nextQuestion(int answer);

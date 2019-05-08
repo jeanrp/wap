@@ -9,6 +9,8 @@ public class SecondQuestionState extends QuizState
         super(points, manageQuiz);
         setAnswer("8");
         setQuestion("1, 1, 2, 3, 5");
+        setSequence(2);
+
     }
 
     @Override

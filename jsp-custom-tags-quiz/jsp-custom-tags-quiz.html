@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p style="font-weight:bold;">1. Rewrite the JSP page in the first demo (forEach) to use scripting instead of the
+        JSTL forEach.</p>
+        <pre>
+            <%
+
+            Student[] students = (Student[])request.getAttribute("students");
+
+            for (Student student :
+                    students)
+            {
+                out.print("<tr><td>"+ student.getName() +"</td><td>"+ student.getAge() +"</td></tr>");
+            }
+            %>
+
+        </pre>
+    <p style="font-weight:bold;">2. How do custom tags relate to JSTL?</p>
+    JSTL is a standard library of JSP actions, and JSP allow us to create our own actions, that you call custom tags.
+    <p style="font-weight:bold;">3. What is the role of the URI in the TLD and the taglib directive?</p>
+    The role of the URI is to define the directory of the TLD file, and the taglib directive is a directive that is
+    going have two main attributes, which are URI and prefix, the URI attribute is going to refer to an specific TLD
+    file, in this case it’s going to be a local URI in your project referring to the TLD created, and also it has a
+    prefix attribute, which is the prefix that you have to use in the HTML to refer to the custom tag created.
+    <p style="font-weight:bold;">4. What is a tag handler class?</p>
+    It’s a class that you have to create to manipulate the referent custom tag used in the HTML. It’s a class that is
+    going to have all the attributes that you are going to use in your jsp file and you the class must extends the
+    javax.servlet.jsp.tagext.TagSupport class, override the doTag method and it is also required to implement set
+    methods.
+    <p style="font-weight:bold;">5. What is the role of attribute setters in a tag handler class?</p>
+    In order to the container make the bind to the value of each attribute presented in the jsp file to the value of
+    each attribute presented in the tag handler class, it is required to have a setter method.
+    <p style="font-weight:bold;">6. What is the role of the doTag() method in a tag handler class? </p>
+    The doTag method will manipulate the attributes of the tag and return a html to the browser based in the attributes
+    manipulated, replacing the custom tag.
+    <p style="font-weight:bold;">7. What does the operation getJspContext().getOut().write(“Hi Bob”) do when called in a
+        doTag() method?</p>
+    Will replace the custom tag in the jsp file to Hi Bob.
+    <p style="font-weight:bold;">8. What does the operation getJspBody().invoke(null) do when called in a doTag()
+        method?</p>
+    If your custom tag has a body inside the container will process the JSP content found in the body of the tag just
+    like any other JSP page content.
+
+    <br />
+    <br />
+    <a href="../index.html">Home</a>
+        
+
+</body>
+
+</html>

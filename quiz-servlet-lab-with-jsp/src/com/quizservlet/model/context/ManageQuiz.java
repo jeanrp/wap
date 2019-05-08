@@ -8,7 +8,7 @@ public class ManageQuiz {
     QuizState currentState;
 
     public ManageQuiz() {
-        this.currentState = new FirstQuestionState(0,this);
+        this.currentState = new FirstQuestionState(0, this);
     }
 
     public void change(int answer) {
@@ -23,5 +23,8 @@ public class ManageQuiz {
         this.currentState = currentState;
     }
 
-
+    public int getNumberOfQuestions()
+    {
+        return 5;
+    }
 }

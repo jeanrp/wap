@@ -1,0 +1,22 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>4.0</jsp-version>
+    <short-name>tlddemo</short-name>
+    <uri>/WEB-INF/tlds/TldDemo</uri>
+    <tag>
+        <description>Generates a label</description>
+        <name>Head</name>
+        <tag-class>com.customtag.model.Head</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>theColor</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>words</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>

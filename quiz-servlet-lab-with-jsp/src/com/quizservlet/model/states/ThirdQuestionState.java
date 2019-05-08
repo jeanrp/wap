@@ -7,6 +7,7 @@ public class ThirdQuestionState extends QuizState {
         super(points, manageQuiz);
         setAnswer("36");
         setQuestion("1, 4, 9, 16, 25");
+        setSequence(3);
     }
 
 

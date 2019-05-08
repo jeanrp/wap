@@ -9,6 +9,7 @@ public class FourthQuestionState extends QuizState {
         super(points, manageQuiz);
         setAnswer("13");
         setQuestion("2, 3, 5, 7, 9, 11");
+        setSequence(4);
     }
 
     @Override

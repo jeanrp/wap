@@ -1,0 +1,57 @@
+    body {
+        background-color: #CCCCFF;
+        font-size: 14pt;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+    }
+    
+    header {
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    header h1 {
+        font-size: 32pt;
+    }
+    
+    textarea {
+        font-size: 12pt;
+        font-weight: bold;
+        width: 100%;
+        height: 400px;
+    }
+    
+    .side-blocks {
+        width: 10%;
+    }
+    
+    .main-block {
+        width: 79%;
+    }
+    
+    .side-blocks,
+    .main-block {
+        display: inline-block;
+    }
+    
+    fieldset {
+        border: 4px solid black;
+        display: inline-block;
+    }
+    
+    .main-block-bottom {
+        margin: 0 auto;
+        width: 600px;
+    }
+
+    #validators
+    {
+        position:fixed;
+        bottom:0;
+        right:0;
+    }
+
+    #validators a
+    {
+        display:block;
+    }

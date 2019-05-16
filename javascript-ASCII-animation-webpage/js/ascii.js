@@ -105,7 +105,7 @@
                     animationText.value = "";
                     currentPosition = 0;
                 }
-                animationText.value += frames[currentPosition] + "=====\n";
+                animationText.value = frames[currentPosition];
                 currentPosition++;
                 animationText.scrollTop = animationText.scrollHeight;
             }, time);

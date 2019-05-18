@@ -9,55 +9,15 @@
 </head>
 
 <body>
+    <span id="teste">
+
+    </span>
+    <script type="text/javascript" src="../mouse-maze-lab/js/jquery.min.js"></script>
     <script type="text/javascript">
-        // Plugin changing cursor before element
-        (function ($) {
-            $.fn.changeCursor = function (cursorPicUrl, dx, dy) {
-                var elem = this;
-                function inFunction(e) {
-                    $cursor.show();
-                    return false;
-                }
-                function outFunction(e) {
-                    $cursor.hide();
-                    return false;
-                }
-                function moveFunction(e) {
-                    var x = e.clientX;
-                    var y = e.clientY;
-                    $cursor.css({
-                        "transform": "translate(" + x + "px," + y + "px)"
-                    });
-                }
-                var $cursor = $('<div id="#custom-cursor"></div>').css({
-                    /*cursor: none;*/
-                    width: '150px',
-                    height: '150px',
-                    background: 'url("' + cursorPicUrl + '") no-repeat left top',
-                    position: 'absolute',
-                    top: '0',
-                    left: '0',
-                    display: 'none'
-                });
-                // <div id="test-area2" style="cursor: url(&quot;https://cdn0.iconfinder.com/data/icons/essen/32/lightbulb.png&quot;), auto;">
-                //     </div>
-                $('body').append($cursor);
-                elem.on("mouseenter", inFunction)
-                    .on("mouseleave", outFunction)
-                    .mousemove(moveFunction);
-                return this;
-            };
-
-        })(jQuery);
-
-        $(document).ready(function () {
-            var url = 'http://placehold.it/150x150';
-            var cursorimg = 'https://cdn0.iconfinder.com/data/icons/essen/32/lightbulb.png';
-            $('#test-area').changeCursor(url);
-            $('#test-area2').css('cursor', 'url(' + cursorimg + '), auto');
+        $(document).ready(function ()
+        {
+            teste.append("HI");
         });
-
-
     </script>
 </body>
 

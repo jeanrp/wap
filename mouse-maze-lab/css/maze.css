@@ -20,15 +20,14 @@ p {
 {
 	height: 300px;
 	width: 508px;
+	position:absolute;
 }
-#maze,#maze-left
-{
-	display:inline-block;
-}
+ 
 #maze { 
 	position: relative;
 	height: 300px;
 	width: 500px;
+	margin: 0 auto;
 }
 
 #start, #end {

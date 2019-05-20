@@ -6,29 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
 </head>
 
 <body>
-    <div id="teste">       
-        <ul>
-            <li class="items 1"></li>
-            <li class="items 2"></li>
-            <li class="items 3"></li>
-            <li class="items 4"></li>
-        </ul>       
+    <div class="ancestors">
+        <div> (great-grandparent)
+            <ul> (grandparent)
+                <li> (direct parent)
+                    <span>some text</span>
+                </li>
+            </ul>
+        </div>
     </div>
 
 
-    <script type="text/javascript" src="../mouse-maze-lab/js/jquery.min.js"></script>
+    <script>
+        //code fragment 1
+        // $("li").each(function (idx, e) {
+        //     $(e).css("color", "yellow");
+        // });
+        // //code fragment 2
+        // $("li").each(function () {
+        //     $(this).css("color", "yellow");
+        // });
+        // //code fragment 3
+        // $("li").each(function (idx) {
+        //     $(this).css("color", "yellow");
+        // });
 
-    <script type="text/javascript">
-    $(document).ready(function ()
-    {
-        $("li.3").after($('li.1'));
-         $('li.2').before($('li.4'));
-    });
     </script>
-<!-- 
+    <!-- 
     <script type="text/javascript">
         function Person(firstName, lastName)
         {

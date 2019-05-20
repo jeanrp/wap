@@ -2,8 +2,7 @@ $(document).ready(function () {
     let started = false;
     let closeElements = [];
     let blankPosition;
-
-    // 
+ 
     let defaultPositions = [
         { left: 0, top: 0 },
         { left: 100, top: 0 },
@@ -73,11 +72,7 @@ $(document).ready(function () {
     }
 
     $("#shufflebutton").click(function () {
-        started = true;
-        // let puzzleArea = document.getElementById('puzzlearea');
-        // shuffle(puzzleArea);
-        // let divs = puzzleArea.getElementsByTagName("div");
-        // setPuzzleBackground(divs, true);
+        started = true; 
         findElementsClose();
         shufflePuzzle();
     });

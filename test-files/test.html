@@ -9,16 +9,58 @@
 </head>
 
 <body>
-    <span id="teste">
+    <div id="teste">       
+        <ul>
+            <li class="items 1"></li>
+            <li class="items 2"></li>
+            <li class="items 3"></li>
+            <li class="items 4"></li>
+        </ul>       
+    </div>
 
-    </span>
+
     <script type="text/javascript" src="../mouse-maze-lab/js/jquery.min.js"></script>
+
     <script type="text/javascript">
-        $(document).ready(function ()
-        {
-            teste.append("HI");
-        });
+    $(document).ready(function ()
+    {
+        $("li.3").after($('li.1'));
+         $('li.2').before($('li.4'));
+    });
     </script>
+<!-- 
+    <script type="text/javascript">
+        function Person(firstName, lastName)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        Person.prototype.getFullName = function()
+        {
+            return this.firstName + ' ' + this.lastName;            
+        }
+
+        var person = new Person('Jean', 'Ribeiro');
+
+        console.log(person);
+
+        var car = { model: 'G6', brand:'VW'};
+
+        var subCar = Object.create(car);
+        subCar.name = 'Gol';
+
+        var subSubCar = Object.create(subCar);
+        subSubCar.model = 'G7';
+        subSubCar.print = function ()
+        {
+            return this.model + ' ' + this.name;
+        }
+
+        console.log(subCar);
+        console.log(subSubCar);
+        console.log(subSubCar.print());
+    </script> -->
 </body>
 
 </html>
